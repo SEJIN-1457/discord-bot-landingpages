@@ -1,4 +1,3 @@
-/* ✅ 기본 배경 설정 */
 .background {
   position: relative;
   width: 100%;
@@ -87,7 +86,6 @@
     top: auto !important;
     bottom: 3% !important;
     position: fixed !important;
-    transform: translateY(0%) !important;
   }
 
   .cta-button[data-pos="top"] {
@@ -103,7 +101,7 @@
   }
 
   .background {
-    background-size: cover; /* 모바일에서는 cover가 더 자연스러움 */
+    background-size: cover; /* contain → cover 로 모바일 가독성 향상 */
     aspect-ratio: auto;
   }
 }
