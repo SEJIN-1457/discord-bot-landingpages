@@ -4,18 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>이용정책</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome 아이콘 라이브러리 추가 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background-color: #f4f4f4;
+    html, body {
       margin: 0;
       padding: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f4f4f4;
       height: 100%;
-      display: flex;
-      flex-direction: column;
     }
 
     header {
@@ -32,7 +28,6 @@
       position: relative;
     }
 
-    /* 뒤로 가기 아이콘 스타일 */
     .back-button {
       position: absolute;
       top: 20px;
@@ -49,6 +44,7 @@
 
     header h1 {
       margin: 0;
+      font-size: 1.5rem;
     }
 
     .content {
@@ -58,10 +54,9 @@
       background-color: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 8px;
-      flex-grow: 1; /* 콘텐츠 영역이 남은 공간을 차지하도록 */
-      overflow-y: auto; /* 내용이 넘칠 경우 스크롤 가능 */
-      max-height: 75vh; /* 최대 높이를 화면의 75%로 제한 */
-      margin-bottom: 100px; /* 푸터 공간을 위해 여백 추가 */
+      flex-grow: 1;
+      margin-bottom: 80px;
+      box-sizing: border-box;
     }
 
     .content h2 {
@@ -70,9 +65,9 @@
     }
 
     .content p {
-      font-size: 1.2em;
+      font-size: 1.1rem;
       line-height: 1.6;
-      color: #666;
+      color: #555;
     }
 
     ul {
@@ -86,18 +81,58 @@
       color: white;
       text-align: center;
       padding: 15px;
-      position: fixed;
-      width: 100%;
+      position: relative;
       bottom: 0;
-      left: 0;
+      width: 100%;
     }
 
+    @media (max-width: 768px) {
+      .content {
+        padding: 24px;
+        margin: 0 16px 100px 16px;
+      }
+
+      .content p {
+        font-size: 1rem;
+      }
+
+      .content h2 {
+        font-size: 1.2rem;
+      }
+
+      header h1 {
+        font-size: 1.2rem;
+      }
+
+      .back-button {
+        font-size: 1.2rem;
+        top: 16px;
+        left: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content {
+        padding: 16px;
+      }
+
+      .content p {
+        font-size: 0.95rem;
+      }
+
+      .content h2 {
+        font-size: 1.1rem;
+      }
+
+      header h1 {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- 뒤로 가기 버튼 (화살표 아이콘) -->
     <i class="fas fa-arrow-left back-button" onclick="history.back();"></i>
     <h1>이용정책</h1>
   </header>
@@ -142,7 +177,6 @@
       <li>이메일: NotiPy@gmail.com</li>
     </ul>
     <p>최종 업데이트일: 2025년 5월 14일</p>
-
     <hr />
   </div>
 
