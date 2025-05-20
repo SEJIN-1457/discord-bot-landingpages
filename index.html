@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discord Landing</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <!-- 상단 네비게이션 -->
+    <a href="#" onclick="scrollToFeatures()" class="nav-link" style="top: 0.96%; left: 36%;">주요기능</a>
+    <a href="/policy.html" class="nav-link" style="top: 0.96%; left: 44%;">이용정책</a>
+    <a href="/cases.html" class="nav-link" style="top: 0.96%; left: 52%;">활용사례</a>
+    <a href="/roadmap.html" class="nav-link" style="top: 0.96%; left: 60%;">로드맵</a>
+    <a href="/community.html" class="nav-link" style="top: 0.96%; left: 68%;">커뮤니티</a>
+    <a href="/terms-consent.html" class="cta-button" style="top: 15.65%; left:17%;">디스코드봇 불러오기</a>
+
+    <!-- 하단 CTA 버튼 -->
+    <a href="/terms-consent.html" class="cta-button" style="top: 89.5%; left: 50%;">디스코드봇 불러오기</a>
+  </div>
+  <div style="height: 3000px;"></div>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="맨 위로">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </svg>
+  </button>
+  <nav>
+    <a href="#" onclick="scrollToFeatures()" class="nav-link" style="bottom: -486%; left: 36%;">주요기능</a>
+    <a href="/policy.html" class="nav-link" style="bottom: -486%; left: 44%;">이용정책</a>
+    <a href="/cases.html" class="nav-link" style="bottom: -486%; left: 52%;">활용사례</a>
+    <a href="/roadmap.html" class="nav-link" style="bottom: -486%; left: 60%;">로드맵</a>
+    <a href="/community.html" class="nav-link" style="bottom: -486%; left: 68%;">커뮤니티</a>
+  </nav>
+  <script>
+    function scrollToFeatures() {
+      const targetY = window.innerHeight * 1.4; // 전체 화면 높이의 40%
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth'
+      });
+    }
+    function scrollToFeatures() {
+    const targetY = window.innerHeight * 1.4;
+    window.scrollTo({ top: targetY, behavior: 'smooth' });
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  window.addEventListener("scroll", () => {
+    const btn = document.getElementById("scrollToTopBtn");
+    if (window.scrollY > window.innerHeight * 0.5) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+  </script>
+</body>
+</html>

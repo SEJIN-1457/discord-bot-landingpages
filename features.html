@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>주요 기능</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome 아이콘 라이브러리 추가 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #5865F2;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* 뒤로 가기 아이콘 스타일 */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .back-button:hover {
+      color: #ddd;
+    }
+
+    .content {
+      padding: 40px;
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .content h2 {
+      color: #333;
+    }
+
+    .content p {
+      color: #666;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .feature-list li {
+      background-color: #e6f2ff;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    .feature-list li h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .feature-list li p {
+      margin-top: 5px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- 뒤로 가기 버튼 (화살표 아이콘) -->
+    <i class="fas fa-arrow-left back-button" onclick="history.back();"></i>
+    <h1>주요 기능</h1>
+  </header>
+
+  <div class="content">
+    <h2>우리의 주요 기능들</h2>
+    <p>디스코드 봇의 주요 기능을 아래에서 확인하실 수 있습니다.</p>
+
+    <ul class="feature-list">
+      <li>
+        <h3>자동화된 메시지 전송</h3>
+        <p>GitHub, Notion, Discord 간의 자동화된 메시지를 설정하여 프로젝트 관리를 효율적으로 할 수 있습니다.</p>
+      </li>
+      <li>
+        <h3>사용자 지정 알림</h3>
+        <p>커스터마이즈 가능한 알림 시스템을 통해, 프로젝트 진행 상황이나 업데이트를 실시간으로 알림 받을 수 있습니다.</p>
+      </li>
+      <li>
+        <h3>팀 협업 최적화</h3>
+        <p>팀원 간의 협업을 개선하고 효율적으로 프로젝트를 관리할 수 있는 다양한 도구들을 제공합니다.</p>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Discord Bot. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

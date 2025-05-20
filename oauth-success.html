@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OAuth 인증 완료</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('./discord-bot-success2.png'); /* ✅ 배경 이미지 */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Noto Sans KR', sans-serif;
+      height: 100vh;
+      position: relative;
+    }
+
+    .button-container {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      z-index: 10;
+    }
+
+    .button-container a {
+      padding: 18px 32px;
+      font-size: 1.2rem;
+      min-width: 240px;
+      background-color: #5865F2;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .button-container a:hover {
+      background-color: #4752c4;
+    }
+
+    @media (max-width: 600px) {
+      .button-container {
+        bottom: 20px;
+        left: 20px;
+      }
+
+      .button-container a {
+        font-size: 1rem;
+        min-width: 180px;
+        padding: 14px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a href="/index.html">🏠 홈페이지로 돌아가기</a>
+    <a href="/guidebook.html">📘 가이드북 보기</a>
+  </div>
+</body>
+</html>
