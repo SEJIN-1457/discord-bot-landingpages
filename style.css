@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   background-image: url('./discord-bot-main.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: scroll;
