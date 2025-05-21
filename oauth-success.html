@@ -15,23 +15,22 @@
       font-family: 'Noto Sans KR', sans-serif;
       height: 100vh;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-end;
     }
 
     .button-container {
-      margin-bottom: 40px;
+      margin: 40px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       gap: 16px;
       align-items: center;
-      width: 100%;
+      flex-wrap: wrap;
     }
 
     .button-container a {
       padding: 18px 32px;
-      font-size: 1.2rem;
-      min-width: 240px;
+      font-size: 1.1rem;
       background-color: #5865F2;
       color: white;
       border-radius: 12px;
@@ -46,15 +45,23 @@
       background-color: #4752c4;
     }
 
+    .close-message {
+      margin-top: 12px;
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+
     @media (max-width: 768px) {
       .button-container {
-        margin-bottom: 24px;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 12px;
+        margin: 24px;
       }
 
       .button-container a {
         font-size: 1rem;
-        min-width: 200px;
         padding: 14px 24px;
       }
     }
@@ -62,7 +69,6 @@
     @media (max-width: 480px) {
       .button-container a {
         font-size: 0.95rem;
-        min-width: 160px;
         padding: 12px 20px;
       }
     }
@@ -72,6 +78,7 @@
   <div class="button-container">
     <a href="https://sejin-1457.github.io/discord-bot-landingpages/">🏠 홈페이지로 돌아가기</a>
     <a href="https://sejin-1457.github.io/discord-bot-landingpages/guidebook.html">📘 가이드북 보기</a>
+    <div class="close-message">이제 창을 닫으셔도 됩니다.</div>
   </div>
 </body>
 </html>
